@@ -1,0 +1,14 @@
+# Private notes — never push these
+**/notes.md
+**/interview-prep.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
