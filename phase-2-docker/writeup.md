@@ -1,6 +1,12 @@
 # Phase 2: Containerizing NexOps — 6 Services, Zero Root
 
-Phase 1 ended with a working app on my local machine — `npm run dev` for the frontend, `uvicorn` for the backend, PostgreSQL installed locally. It worked, but it was fragile. Different Python versions, missing system packages, "works on my machine" energy. Time to containerize everything.
+I'll be honest — Docker isn't new to me. I've been using it for years as a software developer. Pull an image, run a container, maybe throw a `docker-compose.yml` together for a project. It was always just a tool to get things running locally. I never really thought about it beyond that. It worked, I moved on.
+
+This phase changed that for me. When you're not just running someone else's containers but actually writing multi-stage Dockerfiles, thinking about security inside the container, wiring up 6 services that depend on each other with health checks — you start seeing why Docker is such a big deal in the DevOps world. It's not just "runs on my machine" convenience. It's the foundation of how modern software gets shipped. Every CI/CD pipeline builds images. Every Kubernetes cluster runs containers. Every cloud deployment starts with a Dockerfile.
+
+I went from "I know Docker" to "oh, I didn't really know Docker." And honestly? I'm hyped. This is the part where the DevOps pieces start clicking together, and I can feel the momentum building.
+
+Phase 1 ended with a working app on my local machine — `npm run dev` for the frontend, `uvicorn` for the backend, PostgreSQL installed locally. It worked, but it was fragile. Different Python versions, missing system packages, "works on my machine" energy. Time to containerize everything properly.
 
 The goal was to get the entire NexOps stack running in Docker containers with a single `docker compose up -d` command. No local dependencies except Docker itself.
 
