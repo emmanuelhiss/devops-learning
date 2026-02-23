@@ -10,7 +10,7 @@ Currently building **[NexOps](https://github.com/emmanuelhiss/nexops)** — an o
 |-------|-------|--------|
 | 0 | [Network Isolation & VPN Setup](phase-0-networking/writeup.md) | Done |
 | 1 | [Building NexOps — App + Proxmox API](phase-1-app/writeup.md) | Done |
-| 2 | Containerization (Docker) | Coming soon |
+| 2 | [Containerizing NexOps — Docker + Compose](phase-2-docker/writeup.md) | Done |
 | 3 | Infrastructure as Code (Terraform) | Coming soon |
 | 4 | Container Orchestration (K3s) | Coming soon |
 
